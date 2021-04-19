@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+#app {
+    width: 500px;
+    height: 600px;
+}
+
+#code {
+    max-height: 450px;
+}
+
+.app\.loading {
+    height: 600px;
+}
+
+.app\.content {
+    height: 580px;
+}

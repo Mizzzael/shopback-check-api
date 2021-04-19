@@ -1,0 +1,21 @@
+{
+  "name": "shopback-check",
+  "version": "0.0.1",
+  "description": "Estensão para checar as utms da ShopBack.",
+  "main": "index.js",
+  "author": "vaseraga",
+  "license": "MIT",
+  "scripts": {
+    "css": "yarn tailwindcss build ./css/tailwindcss.css -o ./css/tailwindcss.bundle.css --config=./tailwind.config.js"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.10",
+    "tailwindcss": "^2.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
