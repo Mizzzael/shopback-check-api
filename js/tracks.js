@@ -10,10 +10,7 @@ injectScript(chrome.extension.getURL('./js/inject.js'), 'body');
 
 window.addEventListener('message', (e) => {
     if (e.data.type
-        && e.data.type === 'send_shopback') {
-        chrome.runtime.sendMessage({ essential: e.data.essential });
-    } else if (e.data.type
-        && e.data.type === 'send_shopback_error') {
+        && (e.data.type === 'send_shopback' || e.data.type === 'send_shopback_error')) {
         chrome.runtime.sendMessage({ essential: e.data.essential });
     }
 }, false);
